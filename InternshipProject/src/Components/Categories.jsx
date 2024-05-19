@@ -1,4 +1,5 @@
 import React from 'react'
+
 import RJS from '../images/ReactJS.jpg'
 import RN from '../images/ReactNative.jfif'
 import Flutter from '../images/Flutter.jpg'
@@ -20,6 +21,11 @@ function Categories() {
         { heading: 'Banker', subheading: '33 Items', image: Banker },
         { heading: 'UI/UX Design', subheading: '29 Items', image: UIUX },
     ]
+
+
+    
+
+
     return (
         <div className='py-24'>
             <div>
@@ -32,7 +38,7 @@ function Categories() {
                 {Internshipdata.map((intern, index) => (
                     <div key={index} className='flex items-center border border-black rounded-lg w-[230px] p-2 mb-4'>
                         <div className=''>
-                            <img className='w-18 h-14 object-cover' src={intern.image} alt="" />
+                            <img className='w-20 h-14 object-cover' src={intern.image} alt="" />
                         </div>
                         <div className='ml-4'>
                             <p className='text-black font-poppins font-semibold hover:text-[#1268EB]'>{intern.heading}</p>
@@ -142,6 +148,8 @@ function Categories() {
                     </div>
                 </div> */}
             </div>
+
+            
 
             {/* Searchign for Internship */}
 
